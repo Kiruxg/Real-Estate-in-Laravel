@@ -1,5 +1,3 @@
-@extends('layouts.main')
-
-@section('content')
-<h1>Home</h1>
+@extends('layouts.main') @section('content') 
+@include('components.hero')
 @endsection
