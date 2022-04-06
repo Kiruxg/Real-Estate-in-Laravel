@@ -1,4 +1,4 @@
-.listings-page {
+.account-layout, .saved-listings-page {
     .listings-city {
         position: relative;
         background: #1b1b1b;
@@ -19,49 +19,20 @@
             opacity: 0.8;
         }
     }
-    .listings-filter {
-        &__wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            background: white;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            position: relative;
-            transform: translate(0, -50%);
-            width: 50%;
-            margin: 0 auto;
-            border-radius: 5px;
+    .content{
+        padding: 100px 0;
+    }
+    .account__menu{
+        h2{
+            font-weight: 700;
         }
-
-        &__option,
-        &__button {
-            padding: 0 15px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            border-radius: 5px;
-            border: 1px solid rgb(245, 246, 247);
-            margin-right: 0.5rem;
-            &:hover {
-                background: rgb(245, 246, 247);
-            }
-        }
-        &__button {
-            margin-right: 0;
-            border: 1px solid rgb(219, 105, 29);
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-            font-weight: 600;
-            &:hover {
-                color: white;
-                background: rgb(245, 246, 247);
-            }
-        }
-        .fa-caret-down {
-            margin-left: 1rem;
+        a{
+            display: block;
+            font-size: 1.1rem;
+            text-decoration: none;
         }
     }
+
     .listings-properties {
         img {
             width: 100%;
@@ -75,11 +46,6 @@
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
             padding: 10px;
             margin-bottom: 2rem;
-            border-radius: 15px;
-            a{
-                text-decoration: none;
-                color: inherit;
-            }
         }
         &__item-price {
             font-size: 2rem;
@@ -110,8 +76,8 @@
         }
         &__saved {
             position: absolute;
-            right: 20px;
-            top: 20px;
+            right: 30px;
+            top: 30px;
             width: 40px;
             height: 40px;
             display: flex;

@@ -6817,6 +6817,7 @@ progress {
   font-size: 2.3rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .header__menu {
   display: flex;
@@ -6846,6 +6847,7 @@ progress {
   border: 1px solid #234dd4;
   margin-right: 1.5rem;
   color: #3366cc;
+  text-decoration: none;
 }
 
 .hero {
@@ -6997,9 +6999,15 @@ progress {
   border-radius: 5px;
 }
 .listings-page .listings-properties__item {
+  position: relative;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 10px;
   margin-bottom: 2rem;
+  border-radius: 15px;
+}
+.listings-page .listings-properties__item a {
+  text-decoration: none;
+  color: inherit;
 }
 .listings-page .listings-properties__item-price {
   font-size: 2rem;
@@ -7027,4 +7035,336 @@ progress {
   color: #7c8791;
   text-align: center;
   display: block;
+}
+.listings-page .listings-properties__saved {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b1b1b;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.listings-page .listings-properties__saved:hover, .listings-page .listings-properties__saved--active {
+  background: #f56262;
+  color: white;
+  cursor: pointer;
+}
+
+.account-layout .listings-city, .saved-listings-page .listings-city {
+  position: relative;
+  background: #1b1b1b;
+}
+.account-layout .listings-city__title, .saved-listings-page .listings-city__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.account-layout .listings-city img, .saved-listings-page .listings-city img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.8;
+}
+.account-layout .content, .saved-listings-page .content {
+  padding: 100px 0;
+}
+.account-layout .account__menu h2, .saved-listings-page .account__menu h2 {
+  font-weight: 700;
+}
+.account-layout .account__menu a, .saved-listings-page .account__menu a {
+  display: block;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.account-layout .listings-properties img, .saved-listings-page .listings-properties img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 5px;
+}
+.account-layout .listings-properties__item, .saved-listings-page .listings-properties__item {
+  position: relative;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+.account-layout .listings-properties__item-price, .saved-listings-page .listings-properties__item-price {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.account-layout .listings-properties__item-details, .saved-listings-page .listings-properties__item-details {
+  font-size: 0.9rem;
+  color: rgb(205, 209, 212);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.account-layout .listings-properties__item-line, .saved-listings-page .listings-properties__item-line {
+  font-size: 0.9rem;
+  height: 1px;
+  background: #7c8791;
+}
+.account-layout .listings-properties__item-address, .saved-listings-page .listings-properties__item-address {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.account-layout .listings-properties__item-owner, .saved-listings-page .listings-properties__item-owner {
+  font-size: 0.9rem;
+  color: #7c8791;
+  text-align: center;
+  display: block;
+}
+.account-layout .listings-properties__saved, .saved-listings-page .listings-properties__saved {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b1b1b;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.account-layout .listings-properties__saved:hover, .account-layout .listings-properties__saved--active, .saved-listings-page .listings-properties__saved:hover, .saved-listings-page .listings-properties__saved--active {
+  background: #f56262;
+  color: white;
+  cursor: pointer;
+}
+
+.request-list h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.request-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.request-list__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.request-list__details {
+  font-size: 1.4rem;
+  color: #7c8791;
+}
+.request-list__info-title {
+  font-weight: 700;
+}
+.request-list__info-status {
+  padding: 10px 15px;
+}
+.request-list__info-status--success {
+  background: greenyellow;
+  font-weight: 700;
+}
+.request-list__info-status--canceled {
+  background: orange;
+}
+.request-list__info-status--sold {
+  background: red;
+  color: white;
+  font-weight: 700;
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-page__form {
+  margin-top: 200px;
+  padding: 20px;
+  width: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.auth-page__form-input, .auth-page__form-button {
+  padding: 0 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-page__form-input {
+  margin-right: 0.5rem;
+  border: 1px solid rgb(205, 209, 212);
+}
+.auth-page__form-input:hover {
+  cursor: pointer;
+  background: rgb(245, 246, 247);
+}
+.auth-page__form-button {
+  background: rgb(219, 105, 29);
+  border: 1px solid rgb(219, 105, 29);
+  color: white;
+}
+.auth-page__title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.auth-page__form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.auth-page__form-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.single-listing-page {
+  padding: 70px 0 0 0;
+}
+.single-listing-page .listing-top {
+  position: relative;
+}
+.single-listing-page .listing-top__img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.single-listing-page .listing-top__form-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+.single-listing-page .listing-top__form-wrapper .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.single-listing-page .listing-top__form {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 20px;
+}
+.single-listing-page .listing-top__form-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.single-listing-page .listing-top__form-group {
+  margin-bottom: 0.5rem;
+}
+.single-listing-page .listing-top__form-group--horz {
+  display: flex;
+}
+.single-listing-page .listing-top__form-option, .single-listing-page .listing-top__form-button {
+  width: 100%;
+  padding: 0 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(245, 246, 247);
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.single-listing-page .listing-top__form-option:hover, .single-listing-page .listing-top__form-button:hover {
+  background: rgb(245, 246, 247);
+}
+.single-listing-page .listing-top__form-button {
+  border: 1px solid rgb(219, 105, 29);
+  background: rgb(219, 105, 29);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+.single-listing-page .listing-top__form-button:hover {
+  color: black;
+  background: rgb(245, 246, 247);
+}
+.single-listing-page .listing-info {
+  padding: 50px 0;
+}
+.single-listing-page .listing-info h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.single-listing-page .listing-info__details {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.single-listing-page .listing-info__details-text {
+  font-size: 1.2rem;
+  color: #7c8791;
+}
+.single-listing-page .listing-info__agent-title {
+  font-size: 0.9rem;
+  display: block;
+  font-weight: 700;
+}
+.single-listing-page .listing-info__agent-name {
+  font-size: 1.9rem;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.single-listing-page .listing-extras__details h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.single-listing-page .listing-extras__details h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.single-listing-page .listing-extras__details p {
+  line-height: 1.5;
+}
+.single-listing-page .listing-extras__details ul {
+  list-style: square;
+}
+.single-listing-page .listing-extras__details ul li {
+  margin-bottom: 1rem;
+}
+.single-listing-page .listing-extras__gallary h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.single-listing-page .listing-extras__gallary img {
+  width: 100%;
+  margin-bottom: 10px;
 }

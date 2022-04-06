@@ -1,0 +1,42 @@
+.request-list {
+  h2{
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+  &__info{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+  &__details{
+    font-size: 1.4rem;
+    color: #7c8791;
+  }
+  &__info-title{
+    font-weight: 700;
+  }
+  &__info-status{
+    padding: 10px 15px;
+    &--success{
+      background:greenyellow;
+      font-weight: 700;
+    }
+    &--canceled{
+      background:orange;
+    }
+    &--sold{
+      background:red;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
