@@ -7198,7 +7198,7 @@ progress {
   align-items: center;
 }
 .auth-page__form {
-  margin-top: 200px;
+  margin: 200px auto;
   padding: 20px;
   width: 400px;
   background: white;
@@ -7215,6 +7215,7 @@ progress {
 .auth-page__form-input {
   margin-right: 0.5rem;
   border: 1px solid rgb(205, 209, 212);
+  width: 100%;
 }
 .auth-page__form-input:hover {
   cursor: pointer;
@@ -7224,6 +7225,7 @@ progress {
   background: rgb(219, 105, 29);
   border: 1px solid rgb(219, 105, 29);
   color: white;
+  width: 100%;
 }
 .auth-page__title {
   font-weight: 700;
@@ -7232,8 +7234,6 @@ progress {
 }
 .auth-page__form-group {
   margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
 }
 .auth-page__form-label {
   font-weight: 700;
@@ -7367,4 +7367,10 @@ progress {
 .single-listing-page .listing-extras__gallary img {
   width: 100%;
   margin-bottom: 10px;
+}
+
+.error-sub-text {
+  color: red;
+  font-size: 0.8rem;
+  padding: 10px 0;
 }

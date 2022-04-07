@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     &__form {
-        margin-top: 200px;
+        margin: 200px auto;
         padding: 20px;
         width: 400px;
         background: white;
@@ -21,6 +21,7 @@
         &-input {
             margin-right: 0.5rem;
             border: 1px solid rgb(205, 209, 212);
+            width: 100%;
             &:hover {
                 cursor: pointer;
                 background: rgb(245, 246, 247);
@@ -30,6 +31,7 @@
             background: rgb(219, 105, 29);
             border: 1px solid rgb(219, 105, 29);
             color: white;
+            width: 100%;
         }
     }
     &__title {
@@ -39,8 +41,6 @@
     }
     &__form-group {
         margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
     }
     &__form-label {
         font-weight: 700;

@@ -12,8 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 //Home Page
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('pages/home');
 });
 //Single Listing
@@ -25,11 +30,11 @@ Route::get('/{property_type}/{listing_type}/{city}', function () {
     return view('pages/listings');
 });
 //User Login
-Route::get('/login', function () {
+Route::get('/home/login', function () {
     return view('pages/login');
 });
 //User Register
-Route::get('/register', function () {
+Route::get('/home/register', function () {
     return view('pages/register');
 });
 //User Saved Listings
@@ -40,3 +45,8 @@ Route::get('/accounts/saved', function () {
 Route::get('/accounts/show-status', function () {
     return view('pages/show-status');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
